@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+::placeholder {
+    color: rgb(175, 175, 175);
+}
+
 html {
     height: 100%
 }
@@ -31,7 +35,7 @@ h2 {
     display: flex;
     justify-content: center;
     margin: 5em;
-    gap: 10em;
+    gap: 3em;
 }
 
 
@@ -40,13 +44,15 @@ h2 {
 
 .categories {
     width: 20em;
-    text-align: right;
     line-height: 2;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding-left: 1.5em;
+    border-radius: 25px;
+    color: inherit;
 }
 
 .categories-list {
-    
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     list-style: none;
 }
 
@@ -66,6 +72,7 @@ form {
     padding-right: 2px;
     color: inherit;
     font-size: 2rem;
+    transition: opacity 200ms ease-in;
 }
 
 .btn:hover {
@@ -80,6 +87,7 @@ form {
     outline: none;
     transition: border-bottom 100ms ease-in;
     order: 2;
+    text-align: right;
 }
 
 .new:focus {
@@ -95,7 +103,11 @@ form {
 .task-list {
     width: 50em;
     line-height: 2;
-    
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    color: inherit;
+    padding-left: 1.5em;
+    padding-bottom: 1.8em;
 }
 
 .clear-tasks {
