@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+        <link rel="stylesheet" href="<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" href="styles.css">   
+        <title>To-Do List App</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>To-Do List</h1>
+        </header>
+
+<!--left side categories-->
+        <div class="container">
+            <div class="categories">
+                <h2>Categories</h2>
+                <ul class="categories-list">
+                    <li class="active-list">Important</li>
+                    <li>Work</li>
+                    <li>School</li>
+                    <li>Home</li>
+                    <li>Grocery</li>
+                </ul>
+                <form action="">
+                    <input 
+                        type="text" 
+                        class="new category"
+                        placeholder="enter new category"
+                        aria-label="enter new category name">
+                    <button 
+                        class="btn category"
+                        aria-label="create new category">
+                            +
+                    </button>
+                </form>
+            </div>
+
+    <!--right side tasks-->
+            <div class="task-list">
+                <div class="task-header">
+                    <h2 class="tasks-title">Important</h2>
+                    <p class="task-count">3 tasks remaining</p>
+                </div>
+                <div class="tasks-body">
+
+    <!--start task 1-->
+                    <div class="task">
+                        <input 
+                            type="checkbox"
+                            id="task-1">
+                        <label for="task-1">
+                            <span class="custom-checkbox"></span>
+                            pay internet bill
+                    </div>
+    <!--close task 1-->
+    <!--start task 2-->
+                    <div class="task">
+                        <input 
+                            type="checkbox"
+                            id="task-2">
+                        <label for="task-2">
+                            <span class="custom-checkbox"></span>
+                            go to the gym
+                    </div>
+    <!--close task 2-->
+    <!--start task 3-->
+                    <div class="task">
+                        <input 
+                            type="checkbox"
+                            id="task-3">
+                        <label for="task-3">
+                            <span class="custom-checkbox"></span>
+                            feed the cats
+                    </div>
+    <!--close task 3-->
+                    <div class="create-new-task"></div>
+                        <form action="">
+                            <input 
+                                type="text" 
+                                class="new task"
+                                placeholder="enter new task"
+                                aria-label="enter new task name">
+                            <button 
+                                class="btn task"
+                                aria-label="create new task">
+                                    +
+                            </button>
+                        </form>
+                    </div>
+
+    <!--clear and delete section-->
+                    <div class="clear-tasks">
+                        <button class="btn delete">clear completed tasks</button>
+                        <button class="btn delete">delete list</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
