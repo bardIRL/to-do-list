@@ -15,16 +15,16 @@
             <h1>To-Do List</h1>
         </header>
 
-<!--left side categories-->
+<!--left side-->
         <div class="container">
             <div class="categories">
                 <h2>Categories</h2>
                 <ul class="categories-list">
                     <li class="active-list">Important</li>
-                    <li>Work</li>
-                    <li>School</li>
-                    <li>Home</li>
-                    <li>Grocery</li>
+                    <li class="list-name">Work</li>
+                    <li class="list-name">School</li>
+                    <li class="list-name">Home</li>
+                    <li class="list-name">Grocery</li>
                 </ul>
                 <form action="">
                     <input 
@@ -33,14 +33,14 @@
                         placeholder="enter new category"
                         aria-label="enter new category name">
                     <button 
-                        class="btn category"
+                        class="btn-list"
                         aria-label="create new category">
                             +
                     </button>
                 </form>
             </div>
 
-    <!--right side tasks-->
+    <!--right side-->
             <div class="task-list">
                 <div class="task-header">
                     <h2 class="tasks-title">Important</h2>
@@ -86,7 +86,7 @@
                                 placeholder="enter new task"
                                 aria-label="enter new task name">
                             <button 
-                                class="btn task"
+                                class="btn-list"
                                 aria-label="create new task">
                                     +
                             </button>
@@ -95,8 +95,8 @@
 
     <!--clear and delete section-->
                     <div class="clear-tasks">
-                        <button class="btn delete">clear completed tasks</button>
-                        <button class="btn delete">delete list</button>
+                        <button class="btn">clear completed tasks</button>
+                        <button class="btn">delete list</button>
                     </div>
                 </div>
             </div>
